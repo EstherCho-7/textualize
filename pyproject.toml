@@ -1,11 +1,14 @@
 [project]
 name = "textualize"
-version = "0.1.0"
-description = "Default template for PDM package"
+version = "0.2.0"
+description = "Practice for Textualize"
 authors = [
     {name = "EstherCho-7", email = "dkgkqm777@gmail.com"},
 ]
-dependencies = []
+dependencies = [
+    "textualize>=0.1",
+    "textual-dev>=1.5.1",
+]
 requires-python = "==3.8.*"
 readme = "README.md"
 license = {text = "MIT"}
