@@ -36,7 +36,7 @@ class MyApp(App):
         chat_messages=[]
 
         try:
-            with open(chat_history_file, "r") as file:
+            with open(chat_history_file, "r", encoding="utf-8") as file:
                 chat_messages=json.load(file)
         except FileNotFoundError:
             pass
@@ -45,7 +45,7 @@ class MyApp(App):
             # json에 들어갈 dictionary 값
             chat_messages.append({"message": message})
 
-        with open(chat_history_file, "w") as file:
+        with open(chat_history_file, "w", encoding="utf-8") as file:
             json.dump(chat_messages, file, indent=4)
 
 MyApp().run()
