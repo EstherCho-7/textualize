@@ -8,6 +8,7 @@ authors = [
 dependencies = [
     "textualize>=0.1",
     "textual-dev>=1.5.1",
+    "pandas>=2.0.3",
 ]
 requires-python = "==3.8.*"
 readme = "README.md"
