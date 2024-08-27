@@ -9,6 +9,8 @@ dependencies = [
     "textualize>=0.1",
     "textual-dev>=1.5.1",
     "pandas>=2.0.3",
+    "kafka>=1.3.5",
+    "kafka-python>=2.0.2",
 ]
 requires-python = "==3.8.*"
 readme = "README.md"
